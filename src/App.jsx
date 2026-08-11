@@ -6,6 +6,7 @@ import { RomanticQuestionScreen } from './components/RomanticQuestionScreen';
 import { VirtualHugScreen } from './components/VirtualHugScreen';
 import { WillYouBeMineScreen } from './components/WillYouBeMineScreen';
 import { FinalAnniversaryScreen } from './components/FinalAnniversaryScreen';
+import { MusicPlayer } from './components/MusicPlayer';
 
 export function App() {
   const [currentScreen, setCurrentScreen] = useState(1); // 1 | 2 | 3 | 4 | 5
@@ -14,6 +15,9 @@ export function App() {
     <main className="relative w-full h-full min-h-[100dvh] flex items-center justify-center overflow-x-hidden">
       {/* Dynamic Ambient Background Particles & Mesh Glow */}
       <FloatingHearts />
+
+      {/* Persistent Global Background Music Player */}
+      <MusicPlayer isUnlocked={currentScreen > 1} />
 
       {/* Complete Story Screen Flow */}
       <AnimatePresence mode="wait">
