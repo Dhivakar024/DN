@@ -1,6 +1,6 @@
 /**
  * PHOTO GALLERY CONFIGURATION
- * Using exact uploaded personal photos with custom face-safe positioning.
+ * Precise, face-safe positioning for individual photos.
  */
 
 export const PHOTO_CONFIG = [
@@ -16,14 +16,16 @@ export const PHOTO_CONFIG = [
     url: '/assets/photo2.jpg',
     caption: 'TOGETHER ALWAYS 💕',
     rotation: 'rotate-2',
-    objectPosition: 'center 25%',
+    objectPosition: 'center 20%',
+    cardHeight: '190px', // slightly taller for portrait composition
   },
   {
     id: 3,
     url: '/assets/photo3.jpg',
     caption: 'SWEET SMILES 🌸',
     rotation: '-rotate-1',
-    objectPosition: 'center 40%',
+    objectPosition: 'center 30%',
+    cardHeight: '180px', // upright selfie composition
   },
   {
     id: 4,

@@ -61,7 +61,10 @@ export const FinalAnniversaryScreen = () => {
                   alt={photo.caption}
                   loading="lazy"
                   className="polaroid-img"
-                  style={{ objectPosition: photo.objectPosition || 'center center' }}
+                  style={{
+                    objectPosition: photo.objectPosition || 'center center',
+                    height: photo.cardHeight || '160px',
+                  }}
                 />
                 <span className="polaroid-caption">{photo.caption}</span>
               </motion.div>
