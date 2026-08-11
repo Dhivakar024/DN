@@ -378,3 +378,68 @@ html, body {
   font-size: 22px;
   transition: all 0.3s ease;
 }
+
+/* Screen 2 Secondary Floating Pill CTA */
+.secondary-pill-cta {
+  width: min(100%, 320px);
+  padding: 14px 24px;
+  font-family: var(--font-heading);
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffffff;
+  background: linear-gradient(135deg, #ff9ebb 0%, #ff6b8b 100%);
+  border: none;
+  outline: none;
+  appearance: none;
+  -webkit-appearance: none;
+  border-radius: 999px;
+  cursor: pointer;
+  box-shadow: 
+    0 8px 22px rgba(255, 107, 139, 0.3),
+    0 2px 6px rgba(255, 255, 255, 0.4) inset;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  animation: ctaBreath 3.5s ease-in-out infinite;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  -webkit-tap-highlight-color: transparent;
+}
+
+.secondary-pill-cta:hover {
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: 0 12px 28px rgba(255, 107, 139, 0.42);
+}
+
+.secondary-pill-cta:active {
+  transform: translateY(1px) scale(0.96);
+}
+
+/* Soft Romantic Text Interaction */
+.romantic-text-link {
+  background: none;
+  border: none;
+  outline: none;
+  appearance: none;
+  -webkit-appearance: none;
+  font-family: var(--font-body);
+  font-size: 14.5px;
+  font-weight: 600;
+  color: #8c6a83;
+  cursor: pointer;
+  padding: 8px 16px;
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  border-radius: 20px;
+  transition: all 0.25s ease;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.romantic-text-link:hover {
+  color: var(--pink-secondary);
+  background: rgba(255, 255, 255, 0.5);
+  transform: translateY(-1px);
+}
